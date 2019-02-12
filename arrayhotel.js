@@ -49,3 +49,11 @@ function bookKing() {
 // var bookedRooms = [[104, 103], [108], [], [303], [];
 // var roomPrices = [75, 85, 100, 150, 200];
 
+function salesReport() {
+	var totalRoomSales = 0;
+	for (var i = 0; i < bookedRooms.length; i++) {
+		totalRoomSales += bookedRooms[i].length * roomPrices[i] ;
+	}
+	return totalRoomSales;
+}
+console.log(salesReport());
